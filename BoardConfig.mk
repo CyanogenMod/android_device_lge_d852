@@ -25,7 +25,9 @@ BLUETOOTH_HCI_USE_MCT := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d852/bluetooth
 
 # Kernel
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 TARGET_KERNEL_CONFIG := cyanogenmod_d852_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 TARGET_REQUIRES_BUMP := true
 
 # Partitions
